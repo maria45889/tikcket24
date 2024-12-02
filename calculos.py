@@ -1,9 +1,9 @@
-def encontrarMayor(val1: int, val2: int, val3: int) -> int:
-    mayorAc = val1
-    if val2 > mayorAc:
-        mayorAc = val2
-    if val3 > mayorAc:
-        mayorAc = val3
-    return mayorAc
-resultado = encontrarMayor(10, 20, 15)
+def valorMayor(valor1: int, valor2: int, valor3: int) -> int:
+    mayorActual = valor1
+    if valor2 > mayorActual:
+        mayorActual = valor2
+    if valor3 > mayorActual:
+        mayorActual = valor3
+    return mayorActual
+resultado = valorMayor(10, 20, 15)
 print(resultado)
