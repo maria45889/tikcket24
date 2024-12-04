@@ -32,3 +32,21 @@ def calcularCuota(monto,interesAnual,numeroMeses):
     interesMensual=(interesAnual/12)/100
     coutaMensual=(monto*interesMensual)/(1-(1+interesMensual)**(-numeroMeses))
     return coutaMensual
+
+
+def calcularEdad(año_nacimiento):
+  
+    import datetime
+    año_actual = datetime.datetime.now().year
+    
+    if año_nacimiento <= 0:
+        return -1  # Persona no nació o nació antes de Cristo
+
+    # Si el año de nacimiento es mayor que el año actual, la persona aún no ha nacido
+    if año_nacimiento > año_actual:
+        return -1
+
+    edad = año_actual - año_nacimiento
+    
+    return edad
+
