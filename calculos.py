@@ -40,9 +40,8 @@ def calcularEdad(año_nacimiento):
     año_actual = datetime.datetime.now().year
     
     if año_nacimiento <= 0:
-        return -1  # Persona no nació o nació antes de Cristo
+        return -1  
 
-    # Si el año de nacimiento es mayor que el año actual, la persona aún no ha nacido
     if año_nacimiento > año_actual:
         return -1
 
